@@ -4,7 +4,7 @@ metadata:
   name: ${{ values.app_name }}
   description: Python app that displays time, named ${{ values.app_name }}
   annotations:
-    github.com/project-slug: DaniloMirandaNG/backstage-python-app
+    github.com/project-slug: DaniloMirandaNG/${{ values.app_name }}
 spec:
   type: service
   owner: development
