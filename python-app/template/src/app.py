@@ -11,8 +11,8 @@ def info():
     'hostname': socket.gethostname(),
     'message': 'You are doing great, human!! :)',
     'deployed_on': 'kubernetes',
-    'env': '{{ values.app_env }}',
-    'app_name': '{{ values.app_name }}'
+    'env': '${{ values.app_env }}',
+    'app_name': '${{ values.app_name }}'
   }), 200
 
 @app.route('/api/v1/health')
